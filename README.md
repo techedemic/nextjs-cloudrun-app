@@ -19,3 +19,5 @@
 3. Build a docker image of the NextJS app
 4. Add your code to Git
 5. Create a github workflow (Action) and deploy the app.
+
+# Testing...

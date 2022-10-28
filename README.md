@@ -1,3 +1,6 @@
+See 
+https://www.youtube.com/embed/IjUnQ9kMnVo ! This repo is based on that video!
+
 ## Deploying NextJS apps to GCP Cloud Run with Github Actions
 
 ### Notes

@@ -2,6 +2,7 @@
 
 ### Notes
 
+- This video is based loosely on [this article](https://snyk.io/blog/choosing-the-best-node-js-docker-image/) - Credit to Snyk.io
 - Refer to [Deploy Nextjs ON Google CloudRun using GitHub actions](https://www.youtube.com/watch?v=IjUnQ9kMnVo) for details on how we got to this project
 
 ### What we'll do?

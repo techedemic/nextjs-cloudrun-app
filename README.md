@@ -1,21 +1,17 @@
-## Deploying NextJS apps to GCP Cloud Run with Github Actions
+## Comparing Docker build/image strategies for NodeJS related builds
 
 ### Notes
 
-1. You should have a GCP account
-2. You need to enable some GCP API's for this to work (we'll touch on that)
-3. You need Docker, NodeJS and npm installed. Prefer the latest versions
-4. Some basic knowledge of Docker, JavaScript/NodeJS and React is preferred
+- Refer to [Deploy Nextjs ON Google CloudRun using GitHub actions](https://www.youtube.com/watch?v=IjUnQ9kMnVo) for details on how we got to this project
 
 ### What we'll do?
 
-1. Create a basic NextJS app
-2. Set up your cloud project to be ready for Cloud Run deployments using Github Actions
+Multiple builds of the same project using different Docker images
 
-- Create a project \*
-- Create a service account
-- Enable the correct API's (Cloud Run + GCR)
-
-3. Build a docker image of the NextJS app
-4. Add your code to Git
-5. Create a github workflow (Action) and deploy the app.
+- The default `node` image - branch `node-default`
+- `node:buster` - branch `node-buster`
+- `node:bullsye` - branch `node-bullseye`
+- `slim` variety `bullseye` - branch `node-bullseye-slim`
+- `lts` (Long-term-support) version of `bullseye` - branch `node-bullseye-lts`
+- `node:alpine` - branch `node-alpine`
+- Distroless images (i.e `gcr.io/distroless/nodejs-debian11`) - branch `node-distroless`

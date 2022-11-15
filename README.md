@@ -8,10 +8,11 @@
 
 Multiple builds of the same project using different Docker images
 
-- The default `node` image - branch `node-default`
-- `node:buster` - branch `node-buster`
-- `node:bullsye` - branch `node-bullseye`
-- `slim` variety `bullseye` - branch `node-bullseye-slim`
-- `lts` (Long-term-support) version of `bullseye` - branch `node-bullseye-lts`
-- `node:alpine` - branch `node-alpine`
-- Distroless images (i.e `gcr.io/distroless/nodejs-debian11`) - branch `node-distroless`
+- The default `node` image - [node-default](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-default)
+- Same default image, but `slim` variety - [node-default-slim](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-default-slim)
+- `node:buster` - [node-buster](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-buster)
+- `node:bullsye` - [node-bullseye](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-bullseye)
+- `slim` variety `bullseye` - [node-bullseye-slim](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-bullseye-slim)
+- `lts` (Long-term-support) version of `bullseye` - [node-bullseye-lts](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-bullseye-lts)
+- `node:alpine` - [node-alpine](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-alpine)
+- Distroless images (i.e `gcr.io/distroless/nodejs-debian11`) - [node-distroless](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-distroless)

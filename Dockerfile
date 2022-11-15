@@ -1,18 +1,14 @@
-# base image
-FROM node:16.15.1-slim
+# Build image
+FROM node:18-bullseye-slim AS build
 
 # Create and change to the app directory.
-WORKDIR /usr/app
-
-# Copy application dependency manifests to the container image.
-# A wildcard is used to ensure copying both package.json AND package-lock.json (when available).
-# Copying this first prevents re-running npm install on every code change.
-COPY . .
-
-# Install production dependencies.
-# If you add a package-lock.json, speed your build by switching to 'npm ci'.
-RUN npm ci --only=production
-
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN npm install
 RUN npm run build
 
-CMD ["npm", "start"]
+# Copy to distroless image
+FROM gcr.io/distroless/nodejs:18
+COPY --from=build /usr/src/app /usr/src/app
+WORKDIR /usr/src/app
+CMD ["./node_modules/next/dist/bin/next","start"]

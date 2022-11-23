@@ -9,6 +9,6 @@ RUN npm run build
 
 # Copy to distroless image
 FROM gcr.io/distroless/nodejs:18
-COPY --from=build /usr/src/app /usr/src/app
+COPY --from=build /usr/src/app/.next /usr/src/app
 WORKDIR /usr/src/app
-CMD ["./node_modules/next/dist/bin/next","start"]
+CMD ["server.js"]

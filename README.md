@@ -2,6 +2,8 @@
 
 ### Notes
 
+- See 'Docker Comparison.pdf' for the presentation used in recording this video
+- Watch a video about this repo here -> https://youtu.be/dqDlrpMR8YE
 - This video is based loosely on [this article](https://snyk.io/blog/choosing-the-best-node-js-docker-image/) - Credit to Snyk.io
 - Refer to [Deploy Nextjs ON Google CloudRun using GitHub actions](https://www.youtube.com/watch?v=IjUnQ9kMnVo) for details on how we got to this project
 

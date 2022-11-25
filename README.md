@@ -17,3 +17,5 @@ Multiple builds of the same project using different Docker images
 - `lts` (Long-term-support) version of `bullseye` - [node-bullseye-lts](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-bullseye-lts)
 - `node:alpine` - [node-alpine](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-alpine)
 - Distroless images (i.e `gcr.io/distroless/nodejs-debian11`) - [node-distroless](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-distroless)
+
+- Distroless images (i.e `gcr.io/distroless/nodejs-debian11`) - [node-distroless-smaller](https://github.com/techedemic/nextjs-cloudrun-app/tree/node-distroless-smaller)

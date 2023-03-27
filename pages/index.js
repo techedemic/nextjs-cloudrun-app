@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://www.techedemic.com">Techedemic!</a>
+          Welcome to <a href="https://www.techedemic.com">Garner on Cloud Run!</a>
         </h1>
       </main>
 
